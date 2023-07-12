@@ -1,0 +1,10 @@
+void gfx_fill_circle( int xc, int yc, int r );
+void gfx_ellipse( int xc, int yc, int r1, int r2 );
+void gfx_arc( int x, int y, int w, int h, int a1, int a2 );
+void gfx_fill_arc( int x, int y, int w, int h, int a1, int a2 );
+void gfx_rectangle( int x, int y, int w, int h );
+void gfx_fill_rectangle( int x, int y, int w, int h );
+void gfx_polygon( XPoint *pointsarr, int num_pts );
+void gfx_fill_polygon( XPoint *pointsarr, int num_pts );
+void gfx_changefont( char * );
+void gfx_changecursor( int );

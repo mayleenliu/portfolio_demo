@@ -1,0 +1,44 @@
+
+The files in this directory are:
+================================
+
+  newfunctions2.txt :  a listing of the new function prototypes
+
+  gfx2.h :  the new header file for those functions
+            (those new functions and their descriptions are after line 50)
+
+  gfx2.o :      the new .o compiled file
+  gfx2_mac.o :  the new .o compiled file for the mac (to run natively)
+
+  testgfx2.c :  simple program to test some of the basic new functions
+
+  testpoly.c :  program to test the new drawing functions (polygon, ellipse, arc, etc.)
+                and to test the 'filled' versions of some of them
+                also shows how to set up an array of XPoint points for the polygon
+
+  testcursors.c :  program to test a few new cursors (mouse pointers)
+
+  testfont.c :  simple program to test using a font
+
+  testxstructs.c :  simple program to test some of Xlib's structs (see below)
+
+
+Here are some of the available struct's that are part of Xlib
+  (they are already included, so no need to do any extra includes; they're only shown here
+    so that you know what they're called and what their members' names are))
+    (note that "short" means "short int")
+
+typedef struct {
+    short x, y;
+} XPoint;
+
+typedef struct {
+    short x1, y1, x2, y2;
+} XSegment;
+
+typedef struct {
+    short x, y;
+    unsigned short width, height;
+} XRectangle;
+
+
